@@ -29,11 +29,15 @@ body {
   line-height: 1;
   /* -webkit-text-size-adjust: none; */
 }
+
+/* header */
 header {
   width: 100%;
   height: 90px;
+  overflow: hidden;
   padding: 30px 0;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 header:hover {
   width: 100%;
@@ -51,37 +55,42 @@ header .gnb > ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 header .gnb > ul.on {
   width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 30px; */
+  gap: 30px;
 }
 header .gnb > ul .one_dep {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   position: relative;
+  padding-right: 20px;
+  transition: 0.5s;
+}
+header .gnb > ul.on .one_dep {
+  padding-right: 50px;
 }
 header .gnb > ul > .one_dep > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 20px; */
   box-sizing: border-box;
   display: block;
-  padding-right: 30px;
   font-size: 20px;
-  transition: 0.5s;
 }
 header .gnb > ul.on > .one_dep > a {
   display: block;
-  padding-right: 60px;
   font-size: 20px;
+  color: #444;
+}
+header .gnb > ul.on > .one_dep > a:hover {
   color: #26247b;
 }
 header .gnb > ul .one_dep > a::after {
@@ -111,12 +120,15 @@ header .gnb > ul .one_dep .sub_gnb .two_dep {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding-top: 20px;
 }
 header:hover .gnb > ul .one_dep .sub_gnb .two_dep li a {
   color: #444;
-  /* color: #26247b; */
+}
+header .gnb > ul .one_dep .sub_gnb .two_dep li a:hover {
+  color: #26247b;
+  font-weight: bold;
 }
 header .logo {
   position: relative;
@@ -145,6 +157,8 @@ header:hover .navright a:nth-child(3) img:nth-child(1),
 header:hover .navright a:nth-child(4) img:nth-child(1) {
   display: none;
 }
+
+/* con */
 .con {
   width: 100%;
   height: 100vh;
