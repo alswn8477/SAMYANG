@@ -252,24 +252,26 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
   height: 100vh;
   position: relative;
 }
-.con3 .imgWrap {
+.con3 .wrap {
   width: 100%;
   height: 100%;
 }
-.con3 .imgBox {
+.con3 .wrap .photo {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.con3 .mask,
-.con3 .bg {
+.con3 .wrap .photo > div {
   width: 100%;
   position: absolute;
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.con3 .imgBox img {
-  width: 100%;
-  height: 100%;
+.con3 .wrap .photo > div img {
+  flex: 1 1 100%;
+  width: 50%;
+  height: 100vh;
   object-fit: cover;
 }
 .con3 ul {
@@ -450,6 +452,7 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
 .con6 {
   padding: 100px 200px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .con6 .title {
   display: flex;
@@ -465,6 +468,18 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
   font-size: 30px;
   color: #000;
   font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+}
+.con6 .title h2 a {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.con6 .title h2 a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .con6 .swiper {
   width: 100%;
