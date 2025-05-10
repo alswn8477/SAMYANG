@@ -27,3 +27,14 @@ header.onmouseleave = function () {
 const con1 = document.querySelector(".con");
 const height = con1.offsetHeight;
 console.log(height);
+
+// con6
+new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 100,
+  grabCursor: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+});

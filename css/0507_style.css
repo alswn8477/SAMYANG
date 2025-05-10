@@ -325,7 +325,7 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
   align-items: center;
 }
 .con4 ul {
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -369,6 +369,7 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
 }
 .con4 ul li a .txt p:nth-child(2) {
   font-size: 32px;
+  line-height: 1.2;
 }
 .con4 ul li a .txt p:nth-child(3) {
   width: 32px;
@@ -390,6 +391,7 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
 .con5 {
   width: 100%;
   height: 380px;
+  position: relative;
 }
 .con5 p {
   width: 100%;
@@ -399,4 +401,111 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.con5 .txt {
+  padding: 50px 50px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+.con5 .txt h5 {
+  font-size: 20px;
+}
+.con5 .txt p:nth-child(2) {
+  font-size: 32px;
+  line-height: 1.2;
+}
+.con5 .txt p:nth-child(3) {
+  width: 32px;
+  height: 32px;
+  padding-top: 20px;
+  transition: 0.5s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.con5:hover .txt p:nth-child(3) {
+  transform: scaleY(1);
+}
+.con5 .txt p:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con5 .txt p:nth-child(4) {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  left: 1000px;
+}
+.con5 .txt p:nth-child(4) img {
+  width: 267px;
+  object-fit: contain;
+}
+
+.con6 {
+  padding: 100px 200px;
+  box-sizing: border-box;
+}
+.con6 .title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.con6 .title p {
+  font-size: 20px;
+  color: #26247b;
+}
+.con6 .title h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: lighter;
+}
+.con6 .swiper {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+.con6 .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.con6 .swiper-slide:hover p img {
+  transform: scale(1.1);
+}
+.con6 .swiper-slide p {
+  width: 430px;
+  height: 300px;
+  overflow: hidden;
+}
+.con6 .swiper-slide p img {
+  width: 430px;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.con6 .swiper-slide .txt {
+  font-size: 16px;
+  color: #000;
+  max-width: 430px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.con6 .swiper-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+.con6 .swiper-scrollbar-drag {
+  background: #6eeb83;
+  border-radius: 2px;
 }
