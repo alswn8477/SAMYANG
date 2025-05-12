@@ -68,3 +68,21 @@ new Swiper(".mySwiper", {
     draggable: true,
   },
 });
+
+// sideBtn
+// window.addEventListener("scroll", function () {
+//   const sideBtna = this.document.querySelectorAll(".sideBtn a");
+//   const sideBtn = this.document.querySelector(".sideBtn");
+//   const triggerHeight = 5740;
+
+//   if (this.window.scrollY > 200) {
+//     sideBtna.style.opacity = "1";
+//   } else {
+//     sideBtna.style.opacity = "0";
+//   }
+//   if (this.window.pageYOffset > triggerHeight) {
+//     sideBtn.classList.add("on");
+//   } else {
+//     sideBtn.classList.remove("on");
+//   }
+// });
