@@ -557,6 +557,7 @@ header:hover .navright .up a:nth-child(4) img:nth-child(1) {
   padding: 20px 40px;
   box-sizing: border-box;
   cursor: pointer;
+  transition: 0.5s;
 }
 .con7 ul li:hover {
   background: #26247b;

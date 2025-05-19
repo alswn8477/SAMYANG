@@ -24,6 +24,7 @@ header.onmouseleave = function () {
   document.querySelector(".con").style.filter = "none";
 };
 
+// con1
 const con1 = document.querySelector(".con");
 const height = con1.offsetHeight;
 console.log(height);
@@ -50,7 +51,7 @@ let divs = document.querySelectorAll(".con3 .wrap .photo > div");
 
 con3ul.querySelectorAll("li").forEach(function (li, index) {
   li.addEventListener("mouseenter", function () {
-    divs.forEach(function (div) {
+    divs.forEach(function (div, i) {
       div.style.display = "none";
     });
 
